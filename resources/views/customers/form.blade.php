@@ -1,2 +1,27 @@
+
 @csrf
-<label>Nome<input name="name" value="{{ old('name',$customer->name ?? '') }}" required></label><label>E-mail<input type="email" name="email" value="{{ old('email',$customer->email ?? '') }}"></label><label>Telefone<input name="phone" value="{{ old('phone',$customer->phone ?? '') }}"></label><label>Endereço<input name="address" value="{{ old('address',$customer->address ?? '') }}"></label><label>Cidade<input name="city" value="{{ old('city',$customer->city ?? '') }}"></label><div class="actions"><button>Salvar</button><a class="btn secondary" href="{{ route('clientes.index') }}">Cancelar</a></div>
+
+<label>Nome
+    <input data-cy="cliente-nome" name="name" value="{{ old('name',$customer->name ?? '') }}" required>
+</label>
+
+<label>E-mail
+    <input data-cy="cliente-email" type="email" name="email" value="{{ old('email',$customer->email ?? '') }}">
+</label>
+
+<label>Telefone
+    <input data-cy="cliente-telefone" name="phone" value="{{ old('phone',$customer->phone ?? '') }}">
+</label>
+
+<label>Endereço
+    <input data-cy="cliente-endereco" name="address" value="{{ old('address',$customer->address ?? '') }}">
+</label>
+
+<label>Cidade
+    <input data-cy="cliente-cidade" name="city" value="{{ old('city',$customer->city ?? '') }}">
+</label>
+
+<div class="actions">
+    <button data-cy="salvar-cliente">Salvar</button>
+    <a class="btn secondary" data-cy="cancelar-cliente" href="{{ route('clientes.index') }}">Cancelar</a>
+</div>

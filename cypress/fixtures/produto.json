@@ -1,0 +1,9 @@
+{
+  "name": "Bolo de Cenoura Teste",
+  "category": "Bolos",
+  "description": "Produto criado pelo Cypress",
+  "price": 25.5,
+  "stock": 20,
+  "minimum_stock": 5,
+  "active": true
+}
