@@ -18,8 +18,8 @@
         </include>
     </source>
     <php>
-        <env name="APP_ENV" value="testing"/>
-	<env name="APP_KEY" value="${APP_KEY}" force="true"/>
+        <env name="APP_ENV" value="testing" force="true"/>
+	<env name="APP_KEY" value="base64:XSR5iUeU/aQx1h1bkHVGKIR6k/B9H+EDW2XErpdZd8s=" force="true"/>
         <env name="APP_MAINTENANCE_DRIVER" value="file"/>
         <env name="BCRYPT_ROUNDS" value="4"/>
         <env name="BROADCAST_CONNECTION" value="null"/>
